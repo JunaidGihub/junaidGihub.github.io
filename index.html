@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Shot</title>
+    <link rel="stylesheet" href="bubble.css">
+</head>
+<body>
+    <div id="difficultyScreen" class="difficulty-screen">
+        <h2>Select Difficulty</h2>
+        <div class="difficulty-buttons">
+            <button onclick="startGame('easy')">Easy</button>
+            <button onclick="startGame('medium')">Medium</button>
+            <button onclick="startGame('hard')">Hard</button>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+            <div class="Tcont">
+                <div class="tab">
+                    <h1>Hit No</h1>&nbsp;&nbsp;
+                    <div id="hit" class="count">4</div>
+                </div>
+                <div class="tab">
+                    <h1>Time(s)</h1>&nbsp;&nbsp;
+                    <div id="time" class="count">60</div>
+                </div>
+                <div class="tab">
+                    <h1>Score</h1>&nbsp;&nbsp;
+                    <div id="score" class="count">00</div>
+                </div>
+                <div class="tab">
+                    <h1>Top Score</h1>&nbsp;&nbsp;
+                    <div id="topScore" class="count">00</div>
+                </div>
+            </div>
+            <div id="countdown"></div>
+            <div class="mainCont"></div>
+        </div>
+    </div>
+
+<script src="bubble.js"></script>
+</body>
+</html>
